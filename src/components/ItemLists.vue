@@ -1,18 +1,18 @@
 <template>
   <div>
     <Item
-      v-for="(item, index) in state"
-      :key="index"
+      v-for="item in state"
+      :key="item.id"
       :id="item.id"
       :title="item.title"
-      :done="item.done"
+      :status="item.status"
     ></Item>
   </div>
 </template>
 
 <script lang="ts">
 import { Vue, Component } from "vue-property-decorator";
-import Item from "@/components/Item.vue";
+import Item from "@/views/Item.vue";
 
 @Component({
   components: {
@@ -24,17 +24,17 @@ export default class ItemLists extends Vue {
     {
       id: 1,
       title: "text1",
-      done: true,
+      status: "active",
     },
     {
       id: 2,
       title: "text2",
-      done: false,
+      status: "clear",
     },
     {
       id: 3,
       title: "text3",
-      done: true,
+      status: "active",
     },
   ];
 }

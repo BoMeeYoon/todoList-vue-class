@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
-import ItemLists from "@/views/ItemLists.vue";
+import ItemLists from "@/components/ItemLists.vue";
 
 Vue.use(Router);
 

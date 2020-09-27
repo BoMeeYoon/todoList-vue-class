@@ -1,11 +1,6 @@
 <template>
   <div class="form-group">
-    <input
-      type="text"
-      class="form-control"
-      id="exampleInputName2"
-      placeholder="add your TODO"
-    />
+    <input type="text" class="form-control" placeholder="add your TODO" />
   </div>
 </template>
 
